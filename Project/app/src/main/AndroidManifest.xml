@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.sgp.spendsync.SpendSync"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BudgetTracker">
+
+        <activity
+            android:name="com.sgp.spendsync.Activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sgp.spendsync.Activity.PDFViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sgp.spendsync.Activity.MoreCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sgp.spendsync.Activity.IncomelistActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sgp.spendsync.Activity.WebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sgp.spendsync.Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name="com.sgp.spendsync.Activity.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SpendSync</string>
+
+    <string name="noData">No Data Found</string>
+    <string name="rateUS">Rate Us</string>
+    <string name="shareApp">Share App</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="suggestion">Suggestions</string>
+    <string name="more">More Apps</string>
+
+    <string name="APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitial_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ID">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
